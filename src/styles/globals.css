@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #050505;
+}
+
+.overlay-1 {
+  position: fixed;
+  width: 1000px;
+  height: 470.81px;
+  right: -150px;
+  top: 200px;
+
+  background: #203172;
+  opacity: 0.55;
+  filter: blur(260.88px);
+  transform: matrix(-0.87, -0.5, -0.5, 0.87, 0, 0);
+}
+
+.overlay-2 {
+  position: fixed;
+  width: 600px;
+  height: 470.81px;
+  left: -150px;
+  top: 350.53px;
+  /* border: 2px solid #fff; */
+
+  background: linear-gradient(
+    127deg,
+    rgba(209, 157, 15, 0.9) -28.51%,
+    rgba(0, 56, 255, 0.9) 54.69%,
+    rgba(224, 165, 5, 0.9) 82.13%
+  );
+  opacity: 0.55;
+  filter: blur(260.88px);
+  transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0);
+}
+
+.sheet-overlay {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  left: 50px;
+  top: 150px;
+
+  background: linear-gradient(
+    127deg,
+    rgba(209, 157, 15, 0.9) -28.51%,
+    rgba(0, 56, 255, 0.9) 54.69%,
+    rgba(224, 165, 5, 0.9) 82.13%
+  );
+  opacity: 0.55;
+  filter: blur(318.896px);
+  transform: matrix(0.69, -0.73, -0.73, -0.69, 0, 0);
+}
+
+/* disable number input spinner */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
